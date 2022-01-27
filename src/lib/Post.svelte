@@ -19,7 +19,7 @@
 			user: getUser().email,
 			content: commentContent
 		}).then(({ data, error }) => {
-			comments = [data, ...comments];
+			comments = [...data, ...comments];
 			return { data, error };
 		});
 	};
